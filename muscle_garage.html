@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muscle Garage — Premium Fitness Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">MUSCLE<span>GARAGE</span></div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-text">Loading Premium Experience...</div>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="#home" class="nav-logo">MUSCLE<span>GARAGE</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#pricing" class="nav-cta">Join Now</a>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-nav" id="mobNav">
+    <ul>
+      <li><a href="#home" onclick="closeMob()">Home</a></li>
+      <li><a href="#about" onclick="closeMob()">About</a></li>
+      <li><a href="#services" onclick="closeMob()">Programs</a></li>
+      <li><a href="#trainers" onclick="closeMob()">Trainers</a></li>
+      <li><a href="#pricing" onclick="closeMob()">Pricing</a></li>
+      <li><a href="#gallery" onclick="closeMob()">Gallery</a></li>
+      <li><a href="#contact" onclick="closeMob()">Contact</a></li>
+      <li><a href="#pricing" class="mob-cta" onclick="closeMob()">Join Now →</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="gym4.png" alt="Muscle Garage" class="hero-img"/>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-reveal>Premium Fitness Club — Est. 2012</div>
+      <h1 class="hero-h1">
+        <span class="h1-line" data-reveal data-delay="100">TRANSFORM</span>
+        <span class="h1-line h1-yellow" data-reveal data-delay="200">YOUR BODY.</span>
+        <span class="h1-line" data-reveal data-delay="300">TRANSFORM</span>
+        <span class="h1-line h1-outline" data-reveal data-delay="400">YOUR LIFE.</span>
+      </h1>
+      <p class="hero-sub" data-reveal data-delay="500">
+        Kalyan East's most premium fitness destination. World-class equipment, expert trainers, and a community that pushes you beyond limits.
+      </p>
+      <div class="hero-btns" data-reveal data-delay="600">
+        <a href="#pricing" class="btn-gold">Join Today</a>
+        <a href="#services" class="btn-outline-w">View Programs</a>
+      </div>
+      <div class="hero-stats" data-reveal data-delay="700">
+        <div class="hstat">
+          <span class="hstat-num" data-count="10000">0</span><span class="hstat-plus">+</span>
+          <span class="hstat-label">Members</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="35">0</span>
+          <span class="hstat-label">Expert Trainers</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="12">0</span><span class="hstat-plus">+</span>
+          <span class="hstat-label">Years Experience</span>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <span class="hstat-num" data-count="49">0</span><span class="hstat-plus">/5★</span>
+          <span class="hstat-label">Rating</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== TRUSTED ========== -->
+  <div class="trusted">
+    <div class="trusted-inner">
+      <span class="trusted-label">Trusted By</span>
+      <div class="trusted-logos">
+        <span>MuscleBlaze</span>
+        <span>Optimum Nutrition</span>
+        <span>GNC</span>
+        <span>MyProtein</span>
+        <span>HealthKart</span>
+        <span>Monster Energy</span>
+        <span>MuscleBlaze</span>
+        <span>Optimum Nutrition</span>
+        <span>GNC</span>
+        <span>MyProtein</span>
+        <span>HealthKart</span>
+        <span>Monster Energy</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about sec" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-imgs" data-reveal>
+          <div class="about-img-main">
+            <img src="gym2.png" alt="Muscle Garage Reception"/>
+          </div>
+          <div class="about-img-sm">
+            <img src="gym4.png" alt="Muscle Garage Cafe"/>
+          </div>
+          <div class="about-badge">
+            <span class="ab-num">12</span>
+            <span class="ab-txt">Years of Excellence</span>
+          </div>
+        </div>
+        <div class="about-right" data-reveal>
+          <div class="sec-eyebrow">About Us</div>
+          <h2 class="sec-h2">Where Champions<br/><span class="yellow">Are Built.</span></h2>
+          <p class="about-p">Muscle Garage is not just a gym — it's a transformation hub. Since 2012, we've been Kalyan East's premier fitness destination, helping thousands of members achieve their body goals with world-class equipment and expert guidance.</p>
+          <p class="about-p">Our philosophy: <strong>Discipline Today. Strength Tomorrow.</strong> Every machine, every trainer, every program is designed to push you beyond your limits and unlock your best self.</p>
+          <div class="about-features">
+            <div class="af-item">
+              <span class="af-icon">⚡</span>
+              <div>
+                <strong>Premium Equipment</strong>
+                <p>Hammer Strength, Life Fitness & more</p>
+              </div>
+            </div>
+            <div class="af-item">
+              <span class="af-icon">🏆</span>
+              <div>
+                <strong>Expert Trainers</strong>
+                <p>Certified professionals, personalized plans</p>
+              </div>
+            </div>
+            <div class="af-item">
+              <span class="af-icon">☕</span>
+              <div>
+                <strong>Nutrition Cafe</strong>
+                <p>Protein shakes, supplements & healthy bites</p>
+              </div>
+            </div>
+            <div class="af-item">
+              <span class="af-icon">📍</span>
+              <div>
+                <strong>Prime Location</strong>
+                <p>Kalyan East — easily accessible</p>
+              </div>
+            </div>
+          </div>
+          <a href="#pricing" class="btn-gold">Start Your Journey</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services sec" id="services">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Programs</div>
+        <h2 class="sec-h2">Train Like a <span class="yellow">Champion</span></h2>
+        <p class="sec-sub">Every program designed by experts. Every result backed by science.</p>
+      </div>
+      <div class="srv-grid">
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">💪</div>
+          <h3>Strength Training</h3>
+          <p>Build raw power and muscle mass with periodized strength programs tailored to your level.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">🏃</div>
+          <h3>Cardio & Endurance</h3>
+          <p>Burn fat, boost stamina and improve cardiovascular health with structured cardio sessions.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card srv-featured" data-reveal>
+          <div class="srv-hot">Most Popular</div>
+          <div class="srv-icon">🔥</div>
+          <h3>CrossFit & HIIT</h3>
+          <p>High-intensity functional training that burns maximum calories and builds athletic performance.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">🏋️</div>
+          <h3>Powerlifting</h3>
+          <p>Squat, bench, deadlift. Master the big three with expert coaching and competition prep.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">🧘</div>
+          <h3>Yoga & Flexibility</h3>
+          <p>Balance strength with mobility. Expert-led yoga sessions for recovery and mindfulness.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">🥗</div>
+          <h3>Nutrition Coaching</h3>
+          <p>Custom meal plans, macro tracking and supplement guidance for maximum results.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">👤</div>
+          <h3>Personal Training</h3>
+          <p>1-on-1 dedicated sessions with certified trainers focused entirely on your goals.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+        <div class="srv-card" data-reveal>
+          <div class="srv-icon">🏅</div>
+          <h3>Bodybuilding</h3>
+          <p>Sculpt the physique you've always dreamed of with specialized hypertrophy programs.</p>
+          <a href="#pricing" class="srv-link">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery sec" id="gallery">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Gallery</div>
+        <h2 class="sec-h2">See The <span class="yellow">Facility</span></h2>
+      </div>
+      <div class="gallery-grid" data-reveal>
+        <div class="gal-item gal-lg">
+          <img src="gym1.png" alt="Training Floor"/>
+          <div class="gal-overlay"><span>Training Floor</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="gym2.png" alt="Reception"/>
+          <div class="gal-overlay"><span>Reception</span></div>
+        </div>
+        <div class="gal-item">
+          <img src="gym4.png" alt="Nutrition Cafe"/>
+          <div class="gal-overlay"><span>Nutrition Cafe</span></div>
+        </div>
+        <div class="gal-item gal-wide">
+          <img src="gym3.png" alt="Fuel Bar"/>
+          <div class="gal-overlay"><span>Cardio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BMI CALCULATOR ========== -->
+  <section class="bmi sec">
+    <div class="wrap">
+      <div class="bmi-wrap">
+        <div class="bmi-left" data-reveal>
+          <div class="sec-eyebrow">Free Tool</div>
+          <h2 class="sec-h2">Check Your <span class="yellow">BMI</span></h2>
+          <p>Know where you stand. Our BMI calculator gives you a starting point — our trainers take you the rest of the way.</p>
+          <div class="bmi-form">
+            <div class="bmi-row">
+              <div class="bmi-field">
+                <label>Weight (kg)</label>
+                <input type="number" id="bmiWeight" placeholder="70"/>
+              </div>
+              <div class="bmi-field">
+                <label>Height (cm)</label>
+                <input type="number" id="bmiHeight" placeholder="170"/>
+              </div>
+            </div>
+            <div class="bmi-gender">
+              <button class="gen-btn active" id="genM" onclick="setGender('M')">Male</button>
+              <button class="gen-btn" id="genF" onclick="setGender('F')">Female</button>
+            </div>
+            <button class="btn-gold full-btn" onclick="calcBMI()">Calculate BMI</button>
+          </div>
+        </div>
+        <div class="bmi-right" data-reveal>
+          <div class="bmi-result" id="bmiResult">
+            <div class="bmi-circle">
+              <span class="bmi-val" id="bmiVal">--</span>
+              <span class="bmi-unit">BMI</span>
+            </div>
+            <div class="bmi-status" id="bmiStatus">Enter your details</div>
+            <div class="bmi-scale">
+              <div class="bs-item"><span class="bs-dot underweight"></span>Underweight &lt;18.5</div>
+              <div class="bs-item"><span class="bs-dot normal"></span>Normal 18.5–24.9</div>
+              <div class="bs-item"><span class="bs-dot overweight"></span>Overweight 25–29.9</div>
+              <div class="bs-item"><span class="bs-dot obese"></span>Obese &gt;30</div>
+            </div>
+            <p class="bmi-tip" id="bmiTip">Calculate your BMI to get personalized health tips from our expert trainers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRAINERS ========== -->
+  <section class="trainers sec" id="trainers">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Our Team</div>
+        <h2 class="sec-h2">Meet Your <span class="yellow">Trainers</span></h2>
+        <p class="sec-sub">Certified experts dedicated to your transformation.</p>
+      </div>
+      <div class="tr-grid">
+        <div class="tr-card" data-reveal>
+          <div class="tr-img">
+            <img src="gym trainer 1.png" alt="Trainer" style="object-position:top"/>
+            <div class="tr-overlay"></div>
+            <div class="tr-badge">Head Trainer</div>
+          </div>
+          <div class="tr-info">
+            <h3>Rahul Sharma</h3>
+            <span>Strength & Powerlifting</span>
+            <p>12 years experience • ISSA Certified</p>
+          </div>
+        </div>
+        <div class="tr-card" data-reveal>
+          <div class="tr-img">
+            <img src="gym trainer 3.png" alt="Trainer" style="object-position:center"/>
+            <div class="tr-overlay"></div>
+            <div class="tr-badge">Nutrition Expert</div>
+          </div>
+          <div class="tr-info">
+            <h3>Priya Nair</h3>
+            <span>Nutrition & Weight Loss</span>
+            <p>8 years experience • ACE Certified</p>
+          </div>
+        </div>
+        <div class="tr-card" data-reveal>
+          <div class="tr-img">
+            <img src="gym trainer 2.png" alt="Trainer" style="object-position:top"/>
+            <div class="tr-overlay"></div>
+            <div class="tr-badge">CrossFit Coach</div>
+          </div>
+          <div class="tr-info">
+            <h3>Arjun Mehta</h3>
+            <span>CrossFit & HIIT</span>
+            <p>6 years experience • CF-L2 Certified</p>
+          </div>
+        </div>
+        <div class="tr-card" data-reveal>
+          <div class="tr-img">
+            <img src="gym trainer5.png" alt="Trainer" style="object-position:top"/>
+            <div class="tr-overlay"></div>
+            <div class="tr-badge">Yoga Specialist</div>
+          </div>
+          <div class="tr-info">
+            <h3>Sneha Kapoor</h3>
+            <span>Yoga & Flexibility</span>
+            <p>9 years experience • RYT-500 Certified</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="pricing sec" id="pricing">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Membership</div>
+        <h2 class="sec-h2">Choose Your <span class="yellow">Plan</span></h2>
+        <p class="sec-sub">No hidden fees. Cancel anytime. Start your transformation today.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card" data-reveal>
+          <div class="price-tier">Basic</div>
+          <div class="price-amt">₹999<span>/month</span></div>
+          <ul class="price-list">
+            <li>✓ Full Gym Access</li>
+            <li>✓ Locker Room</li>
+            <li>✓ Group Classes (2/week)</li>
+            <li>✓ BMI Assessment</li>
+            <li class="dim">✗ Personal Trainer</li>
+            <li class="dim">✗ Nutrition Plan</li>
+            <li class="dim">✗ Cafe Discount</li>
+          </ul>
+          <a href="#contact" class="btn-outline-y full-btn">Get Started</a>
+        </div>
+        <div class="price-card price-pop" data-reveal>
+          <div class="price-badge">Most Popular</div>
+          <div class="price-tier">Pro</div>
+          <div class="price-amt">₹1,799<span>/month</span></div>
+          <ul class="price-list">
+            <li>✓ Full Gym Access</li>
+            <li>✓ Locker Room</li>
+            <li>✓ Unlimited Classes</li>
+            <li>✓ Monthly Assessment</li>
+            <li>✓ 4 PT Sessions/Month</li>
+            <li>✓ Nutrition Guidance</li>
+            <li class="dim">✗ Cafe Discount</li>
+          </ul>
+          <a href="#contact" class="btn-gold full-btn">Join Now</a>
+        </div>
+        <div class="price-card" data-reveal>
+          <div class="price-tier">Elite</div>
+          <div class="price-amt">₹2,999<span>/month</span></div>
+          <ul class="price-list">
+            <li>✓ Full Gym Access</li>
+            <li>✓ Premium Locker</li>
+            <li>✓ Unlimited Classes</li>
+            <li>✓ Weekly Assessment</li>
+            <li>✓ Unlimited PT Sessions</li>
+            <li>✓ Custom Nutrition Plan</li>
+            <li>✓ 20% Cafe Discount</li>
+          </ul>
+          <a href="#contact" class="btn-outline-y full-btn">Get Elite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="testi sec" id="testimonials">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Success Stories</div>
+        <h2 class="sec-h2">Real Results. <span class="yellow">Real People.</span></h2>
+      </div>
+      <div class="testi-slider" data-reveal>
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Lost 18kg in 4 months. The trainers here are on another level. Muscle Garage changed my life completely!"</p>
+            <div class="testi-author">
+              <div class="ta-avatar">RK</div>
+              <div><strong>Rohit Kumar</strong><span>Lost 18kg • 4 months</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Best gym in Kalyan East without a doubt. Premium equipment, professional staff and the nutrition cafe is a game changer!"</p>
+            <div class="testi-author">
+              <div class="ta-avatar">PS</div>
+              <div><strong>Prachi Shah</strong><span>Member since 2022</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Gained 8kg of pure muscle in 3 months. The personal training program is absolutely worth every rupee!"</p>
+            <div class="testi-author">
+              <div class="ta-avatar">AV</div>
+              <div><strong>Aditya Verma</strong><span>Gained 8kg muscle</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"The CrossFit classes are incredible. I've never been this fit. The community here keeps you motivated every single day."</p>
+            <div class="testi-author">
+              <div class="ta-avatar">NM</div>
+              <div><strong>Neha Mishra</strong><span>CrossFit Member</span></div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p>"Dropped from 95kg to 74kg in 6 months. The nutrition coaching + training combo is unbeatable. Highly recommend!"</p>
+            <div class="testi-author">
+              <div class="ta-avatar">SK</div>
+              <div><strong>Suresh Kamble</strong><span>Lost 21kg • 6 months</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="tc-btn" id="tcPrev">←</button>
+          <button class="tc-btn" id="tcNext">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq sec">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">FAQ</div>
+        <h2 class="sec-h2">Got <span class="yellow">Questions?</span></h2>
+      </div>
+      <div class="faq-list" data-reveal>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What are your working hours?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">We are open 5:00 AM – 11:00 PM on weekdays and 6:00 AM – 9:00 PM on weekends. We're here whenever you need to train.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is there a joining fee?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, there is a one-time registration fee of ₹499. This covers your welcome kit, initial assessment, and locker setup.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you offer trial sessions?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Absolutely! We offer a free 1-day trial pass. Visit us any day, bring comfortable clothes and we'll show you around and let you train for free.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Can I freeze my membership?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, Pro and Elite members can freeze their membership for up to 30 days per year at no extra charge. Just inform us 3 days in advance.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Are personal training sessions included?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Pro members get 4 PT sessions per month. Elite members get unlimited PT sessions. Basic members can add PT sessions at ₹500 per session.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you have parking available?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">Yes, we have ample free parking available for all members. Two-wheelers and four-wheelers both welcome.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact sec" id="contact">
+    <div class="wrap">
+      <div class="sec-center" data-reveal>
+        <div class="sec-eyebrow">Contact</div>
+        <h2 class="sec-h2">Let's Get <span class="yellow">Started</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left" data-reveal>
+          <div class="cinfo">
+            <div class="ci-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Kalyan East, Maharashtra — 421306</p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <span class="ci-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <p>hello@musclegarage.in</p>
+              </div>
+            </div>
+            <div class="ci-item">
+              <span class="ci-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Fri: 5AM–11PM<br/>Sat–Sun: 6AM–9PM</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/919876543210" class="btn-gold wa-btn" target="_blank">
+            💬 Chat on WhatsApp
+          </a>
+        </div>
+        <div class="contact-right" data-reveal>
+          <form class="cform" id="cForm">
+            <div class="cf-row">
+              <div class="cf-group">
+                <label>Your Name</label>
+                <input type="text" name="name" autocomplete="name" placeholder="Rahul Sharma" required/>
+              </div>
+              <div class="cf-group">
+                <label>Phone Number</label>
+                <input type="tel" name="tel" autocomplete="tel" placeholder="+91 98765 43210" required/>
+              </div>
+            </div>
+            <div class="cf-group">
+              <label>Email Address</label>
+              <input type="email" name="email" autocomplete="email" placeholder="rahul@gmail.com" required/>
+            </div>
+            <div class="cf-group">
+              <label>Interested In</label>
+              <select name="interest" required>
+                <option value="" disabled selected>Select a program</option>
+                <option>Basic Membership</option>
+                <option>Pro Membership</option>
+                <option>Elite Membership</option>
+                <option>Personal Training</option>
+                <option>CrossFit / HIIT</option>
+                <option>Free Trial</option>
+              </select>
+            </div>
+            <div class="cf-group">
+              <label>Message</label>
+              <textarea rows="3" placeholder="Tell us your fitness goals..."></textarea>
+            </div>
+            <button type="submit" class="btn-gold full-btn">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA BAND ========== -->
+  <div class="cta-band" data-reveal>
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Ready to Transform?</h2>
+        <p>Join 10,000+ members who already changed their lives.</p>
+      </div>
+      <a href="#pricing" class="btn-gold">Join Muscle Garage Today →</a>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">MUSCLE<span>GARAGE</span></div>
+          <p>Kalyan East's most premium fitness destination. Where champions are built.</p>
+          <div class="footer-socials">
+            <a href="#">IN</a><a href="#">FB</a><a href="#">YT</a><a href="#">TW</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#">Strength Training</a></li>
+            <li><a href="#">CrossFit & HIIT</a></li>
+            <li><a href="#">Personal Training</a></li>
+            <li><a href="#">Yoga & Flexibility</a></li>
+            <li><a href="#">Nutrition Coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <div class="footer-hours">
+            <div><span>Mon–Fri</span><strong>5:00 AM – 11:00 PM</strong></div>
+            <div><span>Saturday</span><strong>6:00 AM – 9:00 PM</strong></div>
+            <div><span>Sunday</span><strong>6:00 AM – 9:00 PM</strong></div>
+          </div>
+          <a href="#pricing" class="btn-gold" style="margin-top:1.2rem;display:inline-block">Join Now</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Muscle Garage. All rights reserved.</span>
+        <div>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919876543210" class="float-wa" target="_blank">💬</a>
+  <button class="float-top" id="floatTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
